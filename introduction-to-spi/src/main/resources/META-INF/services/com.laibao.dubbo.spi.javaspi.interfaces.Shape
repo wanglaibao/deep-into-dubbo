@@ -1,0 +1,6 @@
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Circle
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Triangle
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Square
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Rectangle
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Pentagon
+com.laibao.dubbo.spi.javaspi.interfaces.impl.Hexagon
