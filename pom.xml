@@ -4,6 +4,9 @@
     <groupId>com.laibao.dubbo</groupId>
     <artifactId>deep-into-dubbo</artifactId>
     <version>1.0.0</version>
+    <modules>
+        <module>introduction-to-spi</module>
+    </modules>
     <packaging>pom</packaging>
 
     <developers>
