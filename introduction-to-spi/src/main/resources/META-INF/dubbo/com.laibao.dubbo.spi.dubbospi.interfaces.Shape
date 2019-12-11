@@ -1,0 +1,6 @@
+circle=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Circle
+triangle=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Triangle
+square=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Square
+rectangle=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Rectangle
+pentagon=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Pentagon
+hexagon=com.laibao.dubbo.spi.dubbospi.interfaces.impl.Hexagon
