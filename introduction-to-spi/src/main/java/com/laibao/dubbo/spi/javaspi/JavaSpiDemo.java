@@ -1,5 +1,6 @@
 package com.laibao.dubbo.spi.javaspi;
 
+
 import com.laibao.dubbo.spi.javaspi.interfaces.Shape;
 
 import java.util.ServiceLoader;
@@ -13,6 +14,7 @@ public class JavaSpiDemo {
 
     public static void main(String[] args) {
         ServiceLoader<Shape> serviceLoader = ServiceLoader.load(Shape.class);
+        System.out.println("ddddddddddddd");
         serviceLoader.forEach(Shape::draw);
     }
 }
