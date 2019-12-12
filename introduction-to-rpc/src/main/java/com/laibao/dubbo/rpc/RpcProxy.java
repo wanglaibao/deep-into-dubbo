@@ -10,9 +10,9 @@ public class RpcProxy<T> {
      * @param host
      * @param port
      * @param interfaceType
-     * @return
+     * @return T
      */
-   public T getProxy(final String host,final int port,final Class interfaceType) {
+   public T getProxy(final String host,final int port,final Class<T> interfaceType) {
 
        return (T)Proxy.newProxyInstance(getClass().getClassLoader(), new Class[]{interfaceType},new RemoteInvocationHandler(host,port,interfaceType));
 
