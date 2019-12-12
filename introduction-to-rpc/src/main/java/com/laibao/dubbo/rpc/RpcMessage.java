@@ -8,7 +8,7 @@ public final class RpcMessage implements Serializable {
 
     private String methodName;
 
-    private Object[] parameters;
+    private Object[] parameterValues;
 
     private Class[] parameterTypes;
 
@@ -16,10 +16,10 @@ public final class RpcMessage implements Serializable {
     public RpcMessage() {
     }
 
-    public RpcMessage(String className, String methodName, Object[] parameters, Class[] parameterTypes) {
+    public RpcMessage(String className, String methodName, Object[] parameterValues, Class[] parameterTypes) {
         this.className = className;
         this.methodName = methodName;
-        this.parameters = parameters;
+        this.parameterValues = parameterValues;
         this.parameterTypes = parameterTypes;
     }
 
@@ -39,12 +39,12 @@ public final class RpcMessage implements Serializable {
         this.methodName = methodName;
     }
 
-    public Object[] getParameters() {
-        return parameters;
+    public Object[] getParameterValues() {
+        return parameterValues;
     }
 
-    public void setParameters(Object[] parameters) {
-        this.parameters = parameters;
+    public void setParameterValues(Object[] parameterValues) {
+        this.parameterValues = parameterValues;
     }
 
     public Class[] getParameterTypes() {
