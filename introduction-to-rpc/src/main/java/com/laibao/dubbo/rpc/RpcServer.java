@@ -7,20 +7,13 @@ import java.util.concurrent.Executors;
 
 public class RpcServer {
 
-    public void start(final int port) {
-        ExecutorService executorService = Executors.newCachedThreadPool();
-        try{
+    private static ExecutorService executorService = Executors.newCachedThreadPool();
 
-            ServerSocket serverSocket = new ServerSocket(port);
-            while (true) {
-                Socket socket =serverSocket.accept();
-                executorService.execute(new ProcessHandler(socket));
-            }
-
-        }catch (Exception e){
-
-        }finally {
-
+    public void startServer(final int port) throws Exception{
+        ServerSocket serverSocket = new ServerSocket(port);
+        while (true) {
+            Socket socket =serverSocket.accept();
+            executorService.execute(new ProcessHandler(socket));
         }
     }
 }
