@@ -1,12 +1,11 @@
 package com.laibao.dubbo.spi.dubbospi.interfaces.impl;
 
-
 import com.laibao.dubbo.spi.dubbospi.interfaces.Shape;
 
-public class Triangle implements Shape {
+public class Heptagon implements Shape {
+
     @Override
     public void draw() {
-        System.out.println("我是三角形");
+        System.out.println("我是Heptagon");
     }
-
 }
