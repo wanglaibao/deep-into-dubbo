@@ -6,6 +6,7 @@
     <version>1.0.0</version>
     <modules>
         <module>introduction-to-spi</module>
+        <module>introduction-to-rpc</module>
     </modules>
     <packaging>pom</packaging>
 
