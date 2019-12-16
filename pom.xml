@@ -7,6 +7,7 @@
     <modules>
         <module>introduction-to-spi</module>
         <module>introduction-to-rpc</module>
+        <module>introduction-to-serialization</module>
     </modules>
     <packaging>pom</packaging>
 
