@@ -1,7 +1,8 @@
-package com.laibao.dubbo.hsf.rpc.serialization;
+package com.laibao.dubbo.hsf.rpc.serialization.impl;
 
 
 import com.esotericsoftware.kryo.io.Input;
+import com.laibao.dubbo.hsf.rpc.serialization.Decoder;
 import com.laibao.dubbo.hsf.rpc.serialization.utils.KryoUtils;
 
 import java.util.Objects;
