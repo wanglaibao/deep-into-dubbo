@@ -1,8 +1,10 @@
-package com.laibao.dubbo.hsf.rpc.serialization;
+package com.laibao.dubbo.hsf.rpc.serialization.impl;
 import java.io.ByteArrayInputStream;
 import java.util.Objects;
 
 import com.caucho.hessian.io.Hessian2Input;
+import com.laibao.dubbo.hsf.rpc.serialization.Decoder;
+
 /**
  * Hessian Decoder,using Hessian2
  * 
