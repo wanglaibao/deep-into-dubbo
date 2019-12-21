@@ -13,5 +13,12 @@
     <artifactId>hsf-rpc</artifactId>
     <version>1.0.0</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.63</version>
+        </dependency>
+    </dependencies>
 
 </project>
