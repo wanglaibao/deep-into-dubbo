@@ -1,13 +1,13 @@
 package com.laibao.dubbo.serialization;
 
-public interface Serializer<T> {
+public interface Serializer {
 
     /**
      * 序列化
      * @param obj
      * @return byte[]
      */
-    byte[] serialize(T obj);
+    <T> byte[] serialize(T obj);
 
 
     /**
@@ -17,5 +17,5 @@ public interface Serializer<T> {
      * @param clz
      * @return T
      */
-     T deserialize(byte[] data, Class<T> clz);
+     <T> T deserialize(byte[] data, Class<T> clz);
 }
