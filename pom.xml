@@ -8,6 +8,7 @@
         <module>introduction-to-spi</module>
         <module>introduction-to-rpc</module>
         <module>introduction-to-serialization</module>
+        <module>hsf-rpc</module>
     </modules>
     <packaging>pom</packaging>
 
