@@ -1,7 +1,9 @@
-package com.laibao.dubbo.hsf.rpc.protocol;
+package com.laibao.dubbo.hsf.rpc.protocol.impl;
 import com.laibao.dubbo.hsf.rpc.Codecs;
 import com.laibao.dubbo.hsf.rpc.RequestWrapper;
 import com.laibao.dubbo.hsf.rpc.ResponseWrapper;
+import com.laibao.dubbo.hsf.rpc.protocol.ByteBufferWrapper;
+import com.laibao.dubbo.hsf.rpc.protocol.Protocol;
 import com.laibao.dubbo.hsf.rpc.protocol.utils.ProtocolUtils;
 
 import java.util.ArrayList;
@@ -79,7 +81,7 @@ public class RPCProtocol implements Protocol {
 	 * @param bytebufferWrapper
 	 * @return ByteBufferWrapper
 	 */
-	public ByteBufferWrapper encode(Object message,ByteBufferWrapper bytebufferWrapper){
+	public ByteBufferWrapper encode(Object message, ByteBufferWrapper bytebufferWrapper){
 		Objects.requireNonNull(message);
 		Objects.requireNonNull(bytebufferWrapper);
 		if(!(message instanceof RequestWrapper) && !(message instanceof ResponseWrapper)){
