@@ -1,5 +1,6 @@
 package com.laibao.dubbo.spi.dubbospi.test;
 
+import com.laibao.dubbo.spi.dubbospi.interfaces.Robot;
 import com.laibao.dubbo.spi.dubbospi.interfaces.Shape;
 import com.laibao.dubbo.spi.dubbospi.interfaces.ShapeContainAdaptiveMethod;
 import org.apache.dubbo.common.URL;
@@ -63,5 +64,16 @@ public class DubboSpiTest {
         ExtensionLoader<ShapeContainAdaptiveMethod> extensionLoader = ExtensionLoader.getExtensionLoader(ShapeContainAdaptiveMethod.class);
         ShapeContainAdaptiveMethod shape = extensionLoader.getAdaptiveExtension();
         shape.drawWithUrl(url);
+    }
+
+
+    @Test
+    public void testSayHello(){
+        ExtensionLoader<Robot> extensionLoader = ExtensionLoader.getExtensionLoader(Robot.class);
+        Robot optimusPrime = extensionLoader.getExtension("optimusPrime");
+        optimusPrime.sayHello();
+
+        Robot bumblebee = extensionLoader.getExtension("bumblebee");
+        bumblebee.sayHello();
     }
 }
