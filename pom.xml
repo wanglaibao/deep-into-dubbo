@@ -10,6 +10,7 @@
         <module>introduction-to-serialization</module>
         <module>hsf-rpc</module>
         <module>introduction-to-serviceref</module>
+        <module>simple-toy-spi</module>
     </modules>
     <packaging>pom</packaging>
 
