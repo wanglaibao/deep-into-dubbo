@@ -8,9 +8,12 @@ import org.w3c.dom.Element;
 
 public class ServiceRefBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
+    @Override
     protected Class getBeanClass(Element element) {
         return ReferenceBean.class;
     }
+
+    @Override
     protected void doParse(Element element, BeanDefinitionBuilder bean) {
         String interfaceClass = element.getAttribute("interface");
         if (StringUtils.hasText(interfaceClass)) {
