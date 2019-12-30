@@ -20,7 +20,7 @@ public class SimpleExtensionLoader<T> {
     /**
      * 定义SPI文件的扫描路径
      */
-    private static final String FEI_CHAO_DIRECTORY = "META-INF/extensions/";
+    private static final String EXTENSIONS_DIRECTORY = "META-INF/extensions/";
 
     /**
      * 分割SPI上默认拓展点字符串用的
@@ -173,7 +173,7 @@ public class SimpleExtensionLoader<T> {
             }
         }
         Map<String, Class<?>> extensionClasses = new HashMap();
-        loadDirectoryFiles(extensionClasses, FEI_CHAO_DIRECTORY);
+        loadDirectoryFiles(extensionClasses, EXTENSIONS_DIRECTORY);
         return extensionClasses;
     }
 
@@ -242,11 +242,7 @@ public class SimpleExtensionLoader<T> {
 
     //获取类加载器
     private static ClassLoader findClassLoader() {
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        if (classLoader == null) {
-            return SimpleExtensionLoader.class.getClassLoader();
-        }
-        return classLoader;
+        return SimpleExtensionLoader.class.getClassLoader();
     }
 
     //获取默认拓展点
