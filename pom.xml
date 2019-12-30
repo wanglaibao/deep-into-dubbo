@@ -9,6 +9,7 @@
         <module>introduction-to-rpc</module>
         <module>introduction-to-serialization</module>
         <module>hsf-rpc</module>
+        <module>introduction-to-serviceref</module>
     </modules>
     <packaging>pom</packaging>
 
