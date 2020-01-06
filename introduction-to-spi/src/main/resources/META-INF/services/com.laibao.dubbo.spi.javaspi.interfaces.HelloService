@@ -1,0 +1,2 @@
+com.laibao.dubbo.spi.javaspi.interfaces.impl.ChineseHelloServiceImpl
+com.laibao.dubbo.spi.javaspi.interfaces.impl.EnglishHelloServiceImpl
