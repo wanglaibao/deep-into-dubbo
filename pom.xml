@@ -11,6 +11,7 @@
         <module>hsf-rpc</module>
         <module>introduction-to-serviceref</module>
         <module>simple-toy-spi</module>
+        <module>microkernel-and-plugin-designprincipal</module>
     </modules>
     <packaging>pom</packaging>
 
