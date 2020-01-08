@@ -12,6 +12,7 @@
         <module>introduction-to-serviceref</module>
         <module>simple-toy-spi</module>
         <module>microkernel-and-plugin-designprincipal</module>
+        <module>introduction-to-nettyrpc</module>
     </modules>
     <packaging>pom</packaging>
 
