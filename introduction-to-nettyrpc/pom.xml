@@ -13,5 +13,22 @@
     <artifactId>introduction-to-nettyrpc</artifactId>
     <version>1.0.0</version>
 
+    <dependencies>
+        <!--lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- netty-all依赖 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.36.Final</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
